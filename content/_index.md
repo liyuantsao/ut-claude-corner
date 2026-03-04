@@ -3,7 +3,7 @@ title: ""
 ---
 
 - **When / Where:** Friday 14:00-15:00  /  GDC 4.816
-- **Links:** [Discussion Doc](https://docs.google.com/document/d/1nWpwEteZ0sx115RrWjOYY9kPmZorbkwVXmZ-b6MYYr8/edit?usp=sharing)
+- **Links:** [Discussion Doc](https://docs.google.com/document/d/1nWpwEteZ0sx115RrWjOYY9kPmZorbkwVXmZ-b6MYYr8/edit?usp=sharing), [File Sharing](https://drive.google.com/drive/u/8/folders/1C8zi4gXg8PQ3MkFO458zy987PRk3hjbv)
 
 ## Topics
 
