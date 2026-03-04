@@ -30,23 +30,23 @@ title: ""
     <tr>
       <td>Mar 13</td>
       <td>TBD</td>
-      <td></td>
+      <td>TBD</td>
       <td></td>
       <td><a href="https://drive.google.com/drive/folders/19Wz9deXRXa20vJEyUF4FtVg1xsNuig6j?usp=drive_link">Files</a></td>
     </tr>
     <tr>
       <td>Mar 20</td>
       <td>TBD</td>
+      <td>TBD</td>
       <td></td>
-      <td></td>
-      <td></td>
+      <td><a href="https://drive.google.com/drive/folders/1E9l2h3LeCqAteLc4QYq35-pCu7dqQ7Z_?usp=drive_link">Files</a></td>
     </tr>
     <tr>
       <td>Mar 27</td>
       <td>TBD</td>
+      <td>TBD</td>
       <td></td>
-      <td></td>
-      <td></td>
+      <td><a href="https://drive.google.com/drive/folders/1qTuP5h8PsdSN-XwFrZ3NfBuiClph6eHz?usp=drive_link">Files</a></td>
     </tr>
   </tbody>
 </table>
