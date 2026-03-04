@@ -24,15 +24,15 @@ title: ""
       <td>Mar 6</td>
       <td>Introduction to Claude Code</td>
       <td>Philipp</td>
-      <td><a href="/notes/2026-03-06-intro/">notes</a></td>
-      <td><a href="https://drive.google.com/drive/folders/1IMWEX6ngiFosLKaScWZ8Pc7kBA70iOOc?usp=drive_link">files</a></td>
+      <td><a href="/notes/2026-03-06-intro/">Notes</a></td>
+      <td><a href="https://drive.google.com/drive/folders/1IMWEX6ngiFosLKaScWZ8Pc7kBA70iOOc?usp=drive_link">Files</a></td>
     </tr>
     <tr>
       <td>Mar 13</td>
       <td>TBD</td>
       <td></td>
       <td></td>
-      <td><a href="https://drive.google.com/drive/folders/19Wz9deXRXa20vJEyUF4FtVg1xsNuig6j?usp=drive_link">files</a></td>
+      <td><a href="https://drive.google.com/drive/folders/19Wz9deXRXa20vJEyUF4FtVg1xsNuig6j?usp=drive_link">Files</a></td>
     </tr>
     <tr>
       <td>Mar 20</td>
