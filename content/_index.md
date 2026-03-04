@@ -24,7 +24,7 @@ title: ""
       <td>Mar 6</td>
       <td>Introduction to Claude Code</td>
       <td>Philipp</td>
-      <td><a href="notes/2026-03-06-intro/">Notes</a></td>
+      <td><a href="{{< siteurl >}}notes/2026-03-06-intro/">Notes</a></td>
       <td><a href="https://drive.google.com/drive/folders/1IMWEX6ngiFosLKaScWZ8Pc7kBA70iOOc?usp=drive_link">Files</a></td>
     </tr>
     <tr>
