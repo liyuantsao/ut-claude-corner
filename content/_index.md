@@ -17,7 +17,7 @@ title: ""
 
 <table>
   <thead>
-    <tr><th>Date</th><th>Topic</th><th>Presenter</th><th>Notes</th></tr>
+    <tr><th>Date</th><th>Topic</th><th>Presenter</th><th>Notes</th><th>Files</th></tr>
   </thead>
   <tbody>
     <tr>
@@ -25,22 +25,26 @@ title: ""
       <td>Introduction to Claude Code</td>
       <td>Philipp</td>
       <td><a href="/notes/2026-03-06-intro/">notes</a></td>
+      <td><a href="https://drive.google.com/drive/folders/1IMWEX6ngiFosLKaScWZ8Pc7kBA70iOOc?usp=drive_link">files</a></td>
     </tr>
     <tr>
       <td>Mar 13</td>
       <td>TBD</td>
       <td></td>
       <td></td>
+      <td><a href="https://drive.google.com/drive/folders/19Wz9deXRXa20vJEyUF4FtVg1xsNuig6j?usp=drive_link">files</a></td>
     </tr>
     <tr>
       <td>Mar 20</td>
       <td>TBD</td>
       <td></td>
       <td></td>
+      <td></td>
     </tr>
     <tr>
       <td>Mar 27</td>
       <td>TBD</td>
+      <td></td>
       <td></td>
       <td></td>
     </tr>
