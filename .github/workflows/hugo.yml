@@ -41,7 +41,7 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
-            -s hugo -D -d $PWD/public
+            -s hugo --buildFuture -d $PWD/public
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
