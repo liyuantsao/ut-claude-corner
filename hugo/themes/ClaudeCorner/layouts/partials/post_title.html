@@ -1,0 +1,43 @@
+{{ $sections := site.Sections.ByWeight -}}
+{{ $pages := where site.RegularPages.ByWeight "Section" page.Section -}}
+<h1 class="post-title">
+    {{- if page.IsSection }}
+      {{- $prev_section := $sections.Next page }}
+      {{- with $sections.Next page }}
+        {{ $prev_pages := where site.RegularPages.ByWeight "Section" $prev_section.Section }}
+        {{ with (index (last 1 $prev_pages) 0) }}
+          <a href="{{ .RelPermalink }}" class="prev"></a>
+        {{ end }}
+      {{- else }}
+        <a href="{{ site.Home.RelPermalink }}" class="prev"></a>
+      {{- end }}
+    {{- else }} {{- /* not page.IsSection */}}
+      {{ with $pages.Next . }}
+        <a href="{{ .RelPermalink }}" class="prev"></a>
+      {{ else }}
+        <a href="{{ page.Parent.RelPermalink }}" class="prev"></a>
+      {{ end }}
+    {{- end }}
+    {{ .Title }}
+    {{- /* handle the next button */}}
+    {{- if page.IsSection }}
+      {{ with (index $pages 0) }}
+        <a href="{{ .RelPermalink }}" class="next"></a>
+      {{ else }}
+        {{ with $sections.Prev page }}
+          <a href="{{ .RelPermalink }}" class="next"></a>
+        {{- else }}
+          <a href="{{ site.Home.RelPermalink }}" class="next"></a>
+        {{ end }}
+      {{ end }}
+    {{- else }} {{- /* not page.IsSection */}}
+      {{- with $pages.Prev . }}
+        <a href="{{ .RelPermalink }}" class="next"></a>
+      {{- else }}
+        {{- with $sections.Prev page.Parent }}
+          <a href="{{ .RelPermalink }}" class="next"></a>
+        {{- end }}
+      {{- end }}
+    {{- end }}
+    {{- if (and .Draft hugo.IsDevelopment) }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+  </h1>

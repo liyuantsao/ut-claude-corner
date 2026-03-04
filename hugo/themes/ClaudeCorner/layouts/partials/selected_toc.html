@@ -1,0 +1,21 @@
+{{/* Usage: {{partial "selected_toc.html" (dict "root" .Site.Home "selected" .Page)}} */}}
+
+{{- $pages := union .root.Pages .root.Sections }}
+{{- $selected := .selected }}
+<ul class="selected-toc">
+    {{- range $index, $page := $pages -}}
+
+    <li class="nested-list">
+    <a aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}" class="{{if (eq $selected $page)}} selected{{end}}{{if $selected.IsDescendant $page}} ancestor{{end}}">
+    {{- if .Title}}{{- .Title }}{{- else }}<b>NO TITLE</b>{{- end }}
+    {{- if (and .Draft hugo.IsDevelopment) }}<span class="entry-isdraft">&nbsp;&nbsp;[draft]</span>{{- end }}
+    </a>
+
+    {{- if (and .IsNode (or ($selected.IsDescendant $page) (eq $selected $page))) -}}
+        {{- partial "selected_toc.html" (dict "root" $page "selected" $selected) -}}
+    {{- end -}}
+    </li>
+
+    {{- end -}}
+
+</ul>

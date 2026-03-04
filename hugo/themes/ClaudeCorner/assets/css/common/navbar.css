@@ -1,0 +1,65 @@
+.navbar {
+    position: fixed;
+    left: 0;
+    background-color: var(--theme);
+
+    top: calc(1.2 * var(--header-height));
+
+    width: var(--sidebar-width);
+    max-width: 250px;
+    max-height: calc(100vh - 1.2 * var(--header-height));
+    overflow-y: auto; /* allows the sidebar to scroll if content is too long */
+    padding: 0;
+    font-size: 0.87rem;
+    z-index: 999;
+}
+
+
+.navbar .ancestor {
+    font-weight: 700;
+}
+.navbar .selected {
+    font-weight: 700;
+}
+
+.navbar ul {
+    list-style: none;
+}
+.navbar li {
+    margin: 0;
+    padding-left: var(--gap);
+    margin-top: var(--gap);
+    margin-bottom: var(--gap);
+    position: relative;
+}
+.navbar li li {
+    position: relative;
+    margin: 0;
+}
+.navbar li li:before {
+    content:"\203A";
+    position: absolute;
+    font-weight: 700;
+    top: 0;
+    left: calc(0.3 * var(--gap));
+}
+
+a.prev, a.next {
+    position: relative;
+    padding: 0.2rem;
+}
+a.prev::before, a.next::before {
+    position: relative;
+    display: inline-block;
+    right: 0;
+    bottom: 0.1em;
+    width: 0.25em;
+    height: 0.25em;
+}
+a.prev::before {
+    content: url(../../icons/prev.svg);
+}
+a.next::before {
+    content: url(../../icons/next.svg);
+}
+

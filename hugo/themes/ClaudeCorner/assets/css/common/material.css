@@ -1,0 +1,31 @@
+a.material {
+    position: relative;
+    padding: 0.1rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    margin: 0;
+    display: inline-block;
+}
+a.material::before {
+    position: relative;
+    display: inline-block;
+    right: 4px;
+    top: 4px;
+    width: 1.5rem;
+    height: 1.5rem;
+    content: '';
+    mask-size: contain;
+    background-color: var(--primary);
+}
+a.notebook::before {
+    mask: url(../../icons/jupyter.svg) no-repeat 0 0;
+}
+a.pdf::before {
+    mask: url(../../icons/pdf.svg) no-repeat 0 0;
+}
+a.py::before {
+    mask: url(../../icons/python.svg) no-repeat 0 0;
+}
+a.zip::before {
+    mask: url(../../icons/zip.svg) no-repeat 0 0;
+}

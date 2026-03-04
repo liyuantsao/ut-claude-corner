@@ -1,0 +1,37 @@
+{{/* Usage: {{partial "full_toc.html" (dict "root" .Site.Home)}} */}}
+
+{{- $pages := union .root.Pages .root.Sections }}
+{{- $depth := 0 }}
+{{ with .depth }}
+    {{- $depth = . }}
+{{- end }}
+{{ if eq $depth 0 }}
+<table class="full-toc">
+    <thead>
+        <tr>
+            <th colspan="4">Title</th>
+        </tr>
+    </thead>
+{{ end }}
+{{- range $index, $page := $pages -}}
+
+    <tr class="{{$page.Params.content_type}}">
+        {{ if gt $depth 0 }}
+        {{ range seq 1 $depth }}
+        <td class="pad"></td>
+        {{ end }}
+        {{ end }}
+    <td colspan="{{ sub 4 $depth }}"><a aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}">
+    {{- if .Title}}{{- .Title }}{{- else }}<b>NO TITLE</b>{{- end }}
+    {{- if (and .Draft hugo.IsDevelopment) }}<span class="entry-isdraft">&nbsp;&nbsp;[draft]</span>{{- end }}
+    </a></td>
+    </tr>
+    {{- if .IsNode -}}
+        {{- partial "full_toc.html" (dict "root" $page "depth" (add $depth 1)) -}}
+        <tr class=""><td colspan="4"></td></tr>
+    {{- end -}}
+{{- end -}}
+
+{{ if eq $depth 0 }}
+</table>
+{{ end }}

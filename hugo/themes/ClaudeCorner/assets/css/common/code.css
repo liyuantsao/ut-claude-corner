@@ -1,0 +1,58 @@
+pre {
+    position: relative;
+}
+pre > button.copy-code {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: url('/icons/copy.svg') no-repeat center;
+}
+pre > button.copy-code:hover {
+    background: url('/icons/copy-hover.svg') no-repeat center;
+}
+pre > button.copy-code.copied {
+    background: url('/icons/copy-success.svg') no-repeat center;
+}
+
+.dark pre > button.copy-code {
+    background: url('/icons/copy-dark.svg') no-repeat center;
+}
+.dark pre > button.copy-code:hover {
+    background: url('/icons/copy-hover-dark.svg') no-repeat center;
+}
+.dark pre > button.copy-code.copied {
+    background: url('/icons/copy-success-dark.svg') no-repeat center;
+}
+/* Force the table-style code blocks to have a specific background
+   and small margins */
+.post-content pre code {
+    color: var(--primary);
+    background: var(--hljs-bg) !important;
+    display: block;
+    margin: 0;
+    padding: 4px 0px;
+    overflow-x: auto;
+    word-break: break-all;
+}
+pre {
+    background: var(--hljs-bg) !important;
+    margin: 0;
+    padding: 0;
+}
+pre.mermaid {
+    background: none !important;
+    margin: 0;
+    padding: 0;
+}
+.post-content div.highlight {
+    border: 1px solid var(--border);
+    background: var(--hljs-bg) !important;
+    border-radius: var(--radius);
+    padding: 2px;
+}
+.post-content div.highlight > div {
+    background: var(--hljs-bg) !important;
+}

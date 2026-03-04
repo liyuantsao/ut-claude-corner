@@ -1,0 +1,57 @@
+:root {
+  --box-blue: rgb(238, 246, 255);
+  --box-purple: rgb(246, 238, 255);
+  --box-green: rgb(238, 255, 246);
+  --box-olive: rgb(246, 255, 238);
+  --box-orange: rgb(255, 246, 238);
+  --box-red: rgb(255, 238, 238);
+}
+.dark {
+  --box-blue: rgb(0, 15, 30);
+  --box-purple: rgb(15, 0, 30);
+  --box-green: rgb(0, 30, 15);
+  --box-olive: rgb(15, 30, 0);
+  --box-orange: rgb(30, 15, 0);
+  --box-red: rgb(30, 0, 0);
+}
+details > summary {
+  position: relative;
+  font-weight: bold;
+  padding-left: 1.5em;
+  cursor: pointer;
+  list-style: none;
+}
+/* Disabling the default icon webkit does not support list-style */
+details > summary::-webkit-details-marker {
+  display: none;
+}
+details > summary::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.5em;
+  height: 1.5em;
+  content: "";
+  background-color: var(--primary);
+  mask: url(../../icons/collapse.svg) no-repeat;
+}
+details[open] summary::before {
+  mask: url(../../icons/expand.svg) no-repeat;
+}
+/* Add the text to the front */
+
+a.torch {
+  position: relative;
+  padding: 0.2rem;
+  padding-left: 0.4rem;
+  margin: 0.2rem;
+}
+a.torch::before {
+  position: relative;
+  display: inline-block;
+  right: 4px;
+  top: 4px;
+  width: 1em;
+  height: 1em;
+  content: url(../../icons/torch.svg);
+}

@@ -1,0 +1,32 @@
+
+.full-toc {
+    border-collapse: collapse;
+    padding: 0;
+}
+.full-toc tr td {
+    margin: 0;
+    border: 1px solid black;
+    padding: 6px 13px;
+}
+
+.full-toc .ml {
+    background-color: #fdf2c2;
+}
+.full-toc .sysml {
+    background-color: #fdf2c2;
+}
+.full-toc .intro {
+    background-color: #fdf2c2;
+}
+
+.dark {
+    .full-toc .ml {
+        background-color: #403a1f;
+    }
+    .full-toc .sysml {
+        background-color: #403a1f;
+    }
+    .full-toc .intro {
+        background-color: #403a1f;
+    }
+}

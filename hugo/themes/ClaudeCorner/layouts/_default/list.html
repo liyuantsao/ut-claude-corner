@@ -1,0 +1,39 @@
+{{- define "main" }}
+
+<aside class="navbar">
+  {{- partial "selected_toc.html" (dict "root" .Site.Home "selected" .Page) -}}
+</aside>
+
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    {{ partial "post_title.html" . }}
+  </header>
+  {{- if .Content }}
+  <div class="post-content">
+    {{ .Content }}
+  </div>
+  {{- end }}
+  {{- if .Params.hide_toc }}
+  {{- else }}
+  {{- partial "full_toc.html" (dict "root" .) }}
+  {{- end }}
+
+  <footer class="post-footer">
+    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+    <ul class="post-tags">
+      {{- range ($.GetTerms $tags) }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+    </ul>
+    {{- if (.Param "ShowPostNavLinks") }}
+    {{- partial "post_nav_links.html" . }}
+    {{- end }}
+    {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
+    {{- partial "share_icons.html" . -}}
+    {{- end }}
+  </footer>
+</article>
+
+{{- end }}{{/* end main */}}
+

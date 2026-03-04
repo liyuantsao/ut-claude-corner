@@ -1,0 +1,19 @@
+img[alt~="right"] {
+    float: right;
+}
+
+img[alt~="left"] {
+    float: left;
+}
+
+img[alt~="center"] {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    float: none!important;
+}
+
+img[alt~="half"] {
+    width: 50%;
+}

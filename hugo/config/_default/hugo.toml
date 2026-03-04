@@ -1,0 +1,41 @@
+title = "UT Claude Corner"
+languageCode = "en-us"
+theme = "ClaudeCorner"
+copyright = "&copy; {{year}} UT Austin"
+
+contentDir = "../content"
+
+[params]
+  description = "Weekly Claude workflow tips and tricks — Philipp's & George's labs"
+  disableBoxToggle = true
+
+[params.assets]
+  disableHLJS = true
+
+[[menus.main]]
+  name = "Notes"
+  url = "/notes/"
+  weight = 10
+
+[[menus.main]]
+  name = "Discuss"
+  url = "https://docs.google.com/document/d/1nWpwEteZ0sx115RrWjOYY9kPmZorbkwVXmZ-b6MYYr8/edit?usp=sharing"
+  weight = 20
+
+[markup.highlight]
+  anchorLineNos = false
+  codeFences = true
+  guessSyntax = true
+  hl_Lines = ''
+  hl_inline = false
+  lineAnchors = ''
+  lineNoStart = 1
+  lineNos = true
+  lineNumbersInTable = true
+  noClasses = true
+  noHl = false
+  style = 'github'
+  tabWidth = 4
+
+[markup.goldmark.renderer]
+  unsafe = true

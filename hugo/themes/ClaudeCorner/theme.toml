@@ -1,0 +1,25 @@
+# theme.toml for ClaudeCorner Hugo theme
+# Adapted from DeepLearning / PaperMod
+
+name = "ClaudeCorner"
+license = "MIT"
+description = "A clean, responsive Hugo theme for the UT Claude Corner meeting site"
+tags = [
+  "light",
+  "dark",
+  "minimalist",
+  "highlight.js"
+]
+features = [
+  "highlight.js"
+]
+min_version = "0.97.1"
+
+[author]
+  name = "UT Claude Corner"
+
+[original]
+  name = "PaperMod"
+  author = "adityatelange"
+  homepage = "https://github.com/adityatelange"
+  repo = "https://github.com/adityatelange/hugo-PaperMod/"

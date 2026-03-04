@@ -1,0 +1,51 @@
+.sidebar {
+    position: fixed;
+    right: 0;
+    overflow-y: auto;
+    background-color: var(--theme);
+    border-left: 1px solid var(--content);
+
+    top: calc(1.2 * var(--header-height));
+
+    width: var(--sidebar-width);
+    max-width: 250px;
+    overflow-y: auto; /* allows the sidebar to scroll if content is too long */
+    padding: var(--gap);
+    z-index: 999;
+
+    .title {
+        font-weight: 700;
+    }
+
+    #TableOfContents {
+        margin-top: 0.5em;
+    }
+
+    /* Default list items */
+    #TableOfContents a {
+        padding: 0.25em 0.375em;
+        margin-left: -0.375em;
+        list-style-type: none;
+    }
+    #TableOfContents ul {
+        padding-left: 20px;
+        list-style-type: none;
+    }
+    #TableOfContents li {
+        line-height: 1.375;
+        padding-top: 0.125em;
+        padding-bottom: 0.125em;
+    }
+    #TableOfContents li:hover {
+        background: var(--tertiary);
+    }
+    #TableOfContents li:hover ul  {
+        background: var(--theme);
+    }
+    /* First tier list items */
+    #TableOfContents>ul {
+        padding-left: 0px;
+    }
+    #TableOfContents>ul>li {
+    }
+}

@@ -1,0 +1,25 @@
+ol.references {
+  margin: 0;
+  padding-left: 1em;
+  padding-top: 0.5em;
+  font-size: 75%;
+}
+ol.references title {
+    display: inline;
+    font-weight: bold;
+}
+ol.references authors {
+    font-size: 95%;
+}
+ol.references year {
+    font-size: 95%;
+}
+ol.references title::after {
+    content: "; ";
+}
+ol.references authors::after {
+    content: "; ";
+}
+ol.references a[href] title {
+    text-decoration: underline;
+}

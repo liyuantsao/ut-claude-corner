@@ -1,0 +1,19 @@
+/* .notebook.output {
+    border-left: 4px solid var(--border);
+} */
+.notebook.output pre {
+    font-size: smaller;
+    background-color: #fff !important;
+}
+.notebook.output pre code {
+    border-radius: 0;
+    border: none;
+    background-color: #fff !important;
+}
+.notebook.error {
+    background-color: rgb(255, 209, 209);
+}
+.notebook svg:not(:root) {
+    width:100%;
+    height: auto;
+}

@@ -1,0 +1,28 @@
+
+.post-content li {
+    margin-top: 0;
+    line-height: 1.5;
+}
+.title-seperator {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 800;
+}
+.todo {
+    color: rgb(168, 53, 0);
+}
+div.error {
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    padding: 0.5em;
+    background-color: rgb(180, 64, 0);
+}
+div.error::before {
+    content: "Error: ";
+    font-weight: bold;
+}
+a.error {
+    border: 1px solid var(--primary);
+    border-radius: 2px;
+    background-color: rgb(180, 64, 0);
+}

@@ -1,0 +1,13 @@
+.post-header iframe {
+    max-width: 100%;
+    border: none;
+}
+details.panopto {
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  width: 11em;
+}
+details[open].panopto {
+  width: 100%;
+}
+details.panopto      > summary::after { mask: url(../../icons/video.svg) no-repeat; }
