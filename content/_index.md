@@ -29,8 +29,8 @@ title: ""
     </tr>
     <tr>
       <td>Mar 13</td>
-      <td>TBD</td>
-      <td>TBD</td>
+      <td>Visualization & Making Reports</td>
+      <td>Shuhan</td>
       <td></td>
       <td><a href="https://drive.google.com/drive/folders/19Wz9deXRXa20vJEyUF4FtVg1xsNuig6j?usp=drive_link">Files</a></td>
     </tr>
