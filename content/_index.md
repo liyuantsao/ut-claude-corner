@@ -8,10 +8,11 @@ title: ""
 ## Topics
 
 1. Introduction to Claude Code
-2. Claude for running and babysitting experiments
-3. Claude for debugging
-4. Visualization
-5. TBD
+2. Visualization
+3. Organizing many Claudes
+4. Claude for running and babysitting experiments
+5. Claude for debugging
+6. TBD
 
 ## Schedule
 
