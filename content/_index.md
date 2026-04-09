@@ -40,7 +40,7 @@ title: ""
       <td>Claude with Research (arXiv, GitHub, ...)</td>
       <td>Brady</td>
       <td></td>
-      <td></td>
+      <td><a href="https://drive.google.com/drive/folders/1E9l2h3LeCqAteLc4QYq35-pCu7dqQ7Z_?usp=drive_link">Files</a></td>
     </tr>
   </tbody>
 </table>
